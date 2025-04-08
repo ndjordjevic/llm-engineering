@@ -9,13 +9,16 @@ HEADERS = {"Content-Type": "application/json"}
 MODEL = "llama3.2"
 
 # A class to represent a Webpage
-# Some websites need you to use proper headers when fetching them:
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
 }
 
 
 class Website:
+    """
+    A utility class to represent a Website that we have scraped
+    """
+
     def __init__(self, url):
         """
         Create this Website object from the given url using the BeautifulSoup library
