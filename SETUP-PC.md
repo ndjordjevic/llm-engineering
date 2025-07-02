@@ -6,9 +6,6 @@ Welcome, PC people!
 
 I should confess up-front: setting up a powerful environment to work at the forefront of AI is not as simple as I'd like. For most people these instructions will go great; but in some cases, for whatever reason, you'll hit a problem. Please don't hesitate to reach out - I am here to get you up and running quickly. There's nothing worse than feeling _stuck_. Message me, email me or LinkedIn message me and I will unstick you quickly!
 
-Email: ed@edwarddonner.com  
-LinkedIn: https://www.linkedin.com/in/eddonner/  
-
 I use a platform called Anaconda to set up your environment. It's a powerful tool that builds a complete science environment. Anaconda ensures that you're working with the right version of Python and all your packages are compatible with mine, even if our systems are completely different. It takes more time to set up, and it uses more hard drive space (5+ GB) but it's very reliable once its working.
 
 Having said that: if you have any problems with Anaconda, I've provided an alternative approach. It's faster and simpler and should have you running quickly, with less of a guarantee around compatibility.
@@ -53,9 +50,9 @@ cd C:\Users\YourUsername\Documents\Projects
 
 Enter this in the command prompt in the Projects folder:
 
-`git clone https://github.com/ed-donner/llm_engineering.git`
+`git clone https://github.com/[your-username]/llm_engineering.git`
 
-This creates a new directory `llm_engineering` within your Projects folder and downloads the code for the class. Do `cd llm_engineering` to go into it. This `llm_engineering` directory is known as the "project root directory".
+This creates a new directory `llm_engineering` within your Projects folder and downloads the project code. Do `cd llm_engineering` to go into it. This `llm_engineering` directory is known as the "project root directory".
 
 ### Part 2: Install Anaconda environment
 
@@ -69,7 +66,7 @@ If this Part 2 gives you any problems, there is an alternative Part 2B below tha
 2. **Set up the environment:**
 
 - Open **Anaconda Prompt** (search for it in the Start menu)
-- Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each week of the course.
+- Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each project area.
 - Create the environment: `conda env create -f environment.yml`
 - Wait for a few minutes for all packages to be installed - in some cases, this can literally take 20-30 minutes if you've not used Anaconda before, and even longer depending on your internet connection. Important stuff is happening! If this runs for more than 1 hour 15 mins, or gives you other problems, please go to Part 2B instead.
 - You have now built an isolated, dedicated AI environment for engineering LLMs, running vector datastores, and so much more! You now need to **activate** it using this command: `conda activate llms`  
@@ -94,7 +91,7 @@ I believe Python 3.12 works also, but (as of Feb 2025) Python 3.13 does **not** 
 If you need to install Python or install another version, you can download it here:  
 https://www.python.org/downloads/
 
-2. Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each week of the course.  
+2. Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each project area.  
 
 Then, create a new virtual environment with this command:  
 `python -m venv llms`
@@ -112,7 +109,7 @@ If you see an error like this:
 Then please follow the link and install Microsoft C++ Build Tools.  
 
 In the very unlikely event that this step doesn't go well, you should try the bullet-proof (but slower) version:  
-`pip install --retries 5 --timeout 15 --no-cache-dir --force-reinstall -r requirements.txt`
+`pip install --retries 5 --timeout 15 --no-cache-dir --force-reinstall -r requirements.txt`
 
 6. **Start Jupyter Lab:**
 
@@ -181,18 +178,6 @@ This file won't appear in Jupyter Lab because jupyter hides files starting with 
 
 - Open **Anaconda Prompt** (search for it in the Start menu) if you used Anaconda, otherwise open a Powershell if you used the alternative approach in Part 2B
   
-- Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each week of the course.
+- Navigate to the "project root directory" by entering something like `cd C:\Users\YourUsername\Documents\Projects\llm_engineering` using the actual path to your llm_engineering project root directory. Do a `dir` and check you can see subdirectories for each project area.
 
-- Activate your environment with `conda activate llms` if you used Anaconda or `llms\Scripts\activate` if you used the alternative approach in Part 2B
-
-- You should see (llms) in your prompt which is your sign that all is well. And now, type: `jupyter lab` and Jupyter Lab should open up, ready for you to get started. Open the `week1` folder and double click on `day1.ipynb`. 
-
-And you're off to the races!
-
-Note that any time you start jupyter lab in the future, you'll need to follow these Part 5 instructions to start it from within the `llm_engineering` directory with the `llms` environment activated.
-
-For those new to Jupyter Lab / Jupyter Notebook, it's a delightful Data Science environment where you can simply hit shift+return in any cell to run it; start at the top and work your way down! There's a notebook in the week1 folder with a [Guide to Jupyter Lab](week1/Guide%20to%20Jupyter.ipynb), and an [Intermediate Python](week1/Intermediate%20Python.ipynb) tutorial, if that would be helpful. When we move to Google Colab in Week 3, you'll experience the same interface for Python runtimes in the cloud. 
-
-If you have any problems, I've included a notebook in week1 called [troubleshooting.ipynb](week1/troubleshooting.ipynb) to figure it out.
-
-Please do message me or email me at ed@edwarddonner.com if this doesn't work or if I can help with anything. I can't wait to hear how you get on.
+- Activate your environment with `conda activate llms`

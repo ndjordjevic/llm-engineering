@@ -1,122 +1,23 @@
 # LLM Engineering - Master AI and LLMs
 
-## Your 8 week journey to proficiency starts today
+Welcome! This repository documents my journey in learning Large Language Models (LLMs) and Generative AI. Each folder represents a step in my hands-on exploration of LLMs, from web automation and UI apps to fine-tuning, retrieval-augmented generation, and building agentic AI systems. The projects build on each other, reflecting both my progress and the evolving landscape of GenAI.
 
-![Voyage](voyage.jpg)
+## Repository Structure
 
-I'm so happy you're joining me on this path. We'll be building immensely satisfying projects in the coming weeks. Some will be easy, some will be challenging, many will ASTOUND you! The projects build on each other so you develop deeper and deeper expertise each week. One thing's for sure: you're going to have a lot of fun along the way.
+- **1_llm_web_automation/**: Web automation and scraping projects using LLMs, including tools for summarizing and extracting information from websites. This section explores the fundamentals of combining web scraping with AI, demonstrating how to fetch data from websites, process it with LLMs, and create automated workflows. I worked with libraries like BeautifulSoup and requests alongside OpenAI and Ollama APIs to build intelligent web tools. Projects include website summarizers, content extractors, and automated data collection systems that showcase practical applications of LLMs in web automation. The skills developed here form the foundation for more complex AI-powered applications.
 
-### Before you begin
+- **2_web_ui_llm_apps/**: Interactive web UI applications powered by LLMs, featuring chatbots, assistants, and creative generators with Gradio interfaces. This section focuses on creating user-friendly interfaces for LLM applications, showing how to build interactive web applications that can engage with users in real-time. I worked with Gradio to create beautiful, responsive UIs for chatbots, creative writing assistants, and specialized AI tools. The projects demonstrate how to integrate multiple AI models, handle user input/output, and create engaging user experiences. This builds on the web automation skills and introduces frontend development concepts for AI applications.
 
-I'm here to help you be most successful with your learning! If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out in the platform or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
-https://www.linkedin.com/in/eddonner/  
-And this is new to me, but I'm also trying out X/Twitter at [@edwarddonner](https://x.com/edwarddonner) - if you're on X, please show me how it's done 😂  
+- **3_huggingface_local_models/**: Experiments with running and using HuggingFace models locally, including pipelines, tokenizers, and model management. This section dives deep into the HuggingFace ecosystem, exploring how to work with open-source models directly on your machine without relying on cloud APIs. I learned about model pipelines, tokenization, text generation, and how to fine-tune models for specific tasks. The projects include building a meeting minutes generator and exploring different model architectures, providing hands-on experience with the tools that power modern AI applications. This knowledge is crucial for understanding how LLMs work under the hood and for building cost-effective AI solutions.
 
-Resources to accompany the course, including the slides and useful links, are here:  
-https://edwarddonner.com/2024/11/13/llm-engineering-resources/
+- **4_llm_code_generation/**: LLM-powered code generation, optimization, and analysis, with examples in Python and C++. This section explores how AI can assist in software development, demonstrating how to use LLMs for code generation, debugging, optimization, and analysis. I worked with both Python and C++ codebases, learning how to prompt LLMs effectively for different programming languages and tasks. Projects include code optimization, automated testing, and intelligent code analysis tools that can help developers write better, more efficient code. This builds on the understanding of LLMs and applies it to practical software development scenarios.
 
-## Instant Gratification instructions for Week 1, Day 1
+- **5_rag_knowledge_management/**: Retrieval Augmented Generation (RAG) systems for knowledge management, including vector stores and knowledge base integration. This section explores one of the most powerful techniques in modern AI: combining LLMs with external knowledge bases to create more accurate and contextual responses. I learned about vector databases, embedding models, semantic search, and how to build systems that can access and reason over large amounts of information. Projects include building a company knowledge management system and creating AI assistants that can answer questions based on specific documents. This knowledge is essential for building AI applications that need to work with real-world data and provide accurate, up-to-date information.
 
-### Important note: see my warning about Llama3.3 below - it's too large for home computers! Stick with llama3.2! Several students have missed this warning...
+- **6_llm_fine_tuning_pricing/**: Fine-tuning LLMs for product pricing tasks, with datasets, scripts, and evaluation notebooks. This section explores how to customize pre-trained models for specific business applications, focusing on the complete fine-tuning pipeline from data preparation to model deployment. I learned about dataset creation, model training, evaluation metrics, and how to optimize models for specific tasks like pricing optimization. The projects demonstrate how to build AI systems that can understand business logic and make intelligent pricing decisions. This represents a significant step up in complexity and shows how to create specialized AI models for real-world business problems.
 
-We will start the course by installing Ollama so you can see results immediately!
-1. Download and install Ollama from https://ollama.com noting that on a PC you might need to have administrator permissions for the install to work properly
-2. On a PC, start a Command prompt / Powershell (Press Win + R, type `cmd`, and press Enter). On a Mac, start a Terminal (Applications > Utilities > Terminal).
-3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!  
-4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.  
-5. And if that doesn't work on your box, I've set up this on the cloud. This is on Google Colab, which will need you to have a Google account to sign in, but is free:  https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
+- **7_open_source_fine_tuning/**: Fine-tuning open-source LLMs for pricing and business applications, with a focus on reproducibility and open tools. This section builds on the fine-tuning concepts but focuses specifically on open-source models and tools, exploring how to work with models like Llama and Mistral. I learned about different fine-tuning techniques, including LoRA and QLoRA, and how to optimize models for efficiency and performance. The projects emphasize reproducibility and open-source best practices, showing how to create models that can be shared and deployed across different environments. This knowledge is crucial for building AI systems that don't rely on proprietary APIs and can be customized for specific business needs.
 
-Any problems, please contact me!
+- **8_agentic_ai_deal_hunting/**: Agentic AI systems for autonomous deal hunting, featuring multi-agent architectures, planning, and cloud deployment. This section represents the culmination of all previous learning, exploring how to build complex, autonomous AI systems that can work independently to achieve business objectives. I learned about multi-agent architectures, autonomous planning, tool usage, and how to deploy AI systems in cloud environments. The projects include building a complete deal-hunting system that can search for opportunities, analyze them, and take actions autonomously. This demonstrates the full potential of modern AI systems and shows how to build applications that can operate independently in real-world scenarios.
 
-## Then, Setup instructions
-
-After we do the Ollama quick project, and after I introduce myself and the course, we get to work with the full environment setup.  
-
-Hopefully I've done a decent job of making these guides bulletproof - but please contact me right away if you hit roadblocks:
-
-- PC people please follow the instructions in [SETUP-PC.md](SETUP-PC.md)
-- Mac people please follow the instructions in [SETUP-mac.md](SETUP-mac.md)  
-- Linux people please follow the instructions in [SETUP-linux.md](SETUP-linux.md)
-
-The are also PDF versions of the setup instructions in this folder if you'd prefer.
-
-### An important point on API costs (which are optional! No need to spend if you don't wish)
-
-During the course, I'll suggest you try out the leading models at the forefront of progress, known as the Frontier models. I'll also suggest you run open-source models using Google Colab. These services have some charges, but I'll keep cost minimal - like, a few cents at a time. And I'll provide alternatives if you'd prefer not to use them.
-
-Please do monitor your API usage to ensure you're comfortable with spend; I've included links below. There's no need to spend anything more than a couple of dollars for the entire course. Some AI providers such as OpenAI require a minimum credit like \$5 or local equivalent; we should only spend a fraction of it, and you'll have plenty of opportunity to put it to good use in your own projects. During Week 7 you have an option to spend a bit more if you're enjoying the process - I spend about \$10 myself and the results make me very happy indeed! But it's not necessary in the least; the important part is that you focus on learning.
-
-### Free alternative to Paid APIs
-
-Early in the course, I show you an alternative if you'd rather not spend anything on APIs:  
-Any time that we have code like:  
-`openai = OpenAI()`  
-You can use this as a direct replacement:  
-`openai = OpenAI(base_url='http://localhost:11434/v1', api_key='ollama')`
-
-Below is a full example:
-
-```
-# You need to do this one time on your computer
-!ollama pull llama3.2
-
-from openai import OpenAI
-MODEL = "llama3.2"
-openai = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
-
-response = openai.chat.completions.create(
- model=MODEL,
- messages=[{"role": "user", "content": "What is 2 + 2?"}]
-)
-
-print(response.choices[0].message.content)
-```
-
-### How this Repo is organized
-
-There are folders for each of the "weeks", representing modules of the class, culminating in a powerful autonomous Agentic AI solution in Week 8 that draws on many of the prior weeks.    
-Follow the setup instructions above, then open the Week 1 folder and prepare for joy.
-
-### The most important part
-
-The mantra of the course is: the best way to learn is by **DOING**. I don't type all the code during the course; I execute it for you to see the results. You should work along with me or after each lecture, running each cell, inspecting the objects to get a detailed understanding of what's happening. Then tweak the code and make it your own. There are juicy challenges for you throughout the course. I'd love it if you wanted to submit a Pull Request for your code (instructions [here](https://chatgpt.com/share/677a9cb5-c64c-8012-99e0-e06e88afd293)) and I can make your solutions available to others so we share in your progress; as an added benefit, you'll be recognized in GitHub for your contribution to the repo. While the projects are enjoyable, they are first and foremost designed to be _educational_, teaching you business skills that can be put into practice in your work.
-
-## Starting in Week 3, we'll also be using Google Colab for running with GPUs
-
-You should be able to use the free tier or minimal spend to complete all the projects in the class. I personally signed up for Colab Pro+ and I'm loving it - but it's not required.
-
-Learn about Google Colab and set up a Google account (if you don't already have one) [here](https://colab.research.google.com/)
-
-The colab links are in the Week folders and also here:  
-- For week 3 day 1, this Google Colab shows what [colab can do](https://colab.research.google.com/drive/1DjcrYDZldAXKJ08x1uYIVCtItoLPk1Wr?usp=sharing)
-- For week 3 day 2, here is a colab for the HuggingFace [pipelines API](https://colab.research.google.com/drive/1aMaEw8A56xs0bRM4lu8z7ou18jqyybGm?usp=sharing)
-- For week 3 day 3, here's the colab on [Tokenizers](https://colab.research.google.com/drive/1WD6Y2N7ctQi1X9wa6rpkg8UfyA4iSVuz?usp=sharing)
-- For week 3 day 4, we go to a colab with HuggingFace [models](https://colab.research.google.com/drive/1hhR9Z-yiqjUe7pJjVQw4c74z_V3VchLy?usp=sharing)
-- For week 3 day 5, we return to colab to make our [Meeting Minutes product](https://colab.research.google.com/drive/1KSMxOCprsl1QRpt_Rq0UqCAyMtPqDQYx?usp=sharing)
-- For week 7, we will use these Colab books: [Day 1](https://colab.research.google.com/drive/15rqdMTJwK76icPBxNoqhI7Ww8UM-Y7ni?usp=sharing) | [Day 2](https://colab.research.google.com/drive/1T72pbfZw32fq-clQEp-p8YQ4_qFKv4TP?usp=sharing) | [Days 3 and 4](https://colab.research.google.com/drive/1csEdaECRtjV_1p9zMkaKKjCpYnltlN3M?usp=sharing) | [Day 5](https://colab.research.google.com/drive/1igA0HF0gvQqbdBD4GkcK3GpHtuDLijYn?usp=sharing)
-
-### Monitoring API charges
-
-You can keep your API spend very low throughout this course; you can monitor spend at the dashboards: [here](https://platform.openai.com/usage) for OpenAI, [here](https://console.anthropic.com/settings/cost) for Anthropic and [here](https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/cost) for Google Gemini.
-
-The charges for the exercsies in this course should always be quite low, but if you'd prefer to keep them minimal, then be sure to always choose the cheapest versions of models:
-1. For OpenAI: Always use model `gpt-4o-mini` in the code instead of `gpt-4o`
-2. For Anthropic: Always use model `claude-3-haiku-20240307` in the code instead of the other Claude models
-3. During week 7, look out for my instructions for using the cheaper dataset
-
-Please do message me or email me at ed@edwarddonner.com if this doesn't work or if I can help with anything. I can't wait to hear how you get on.
-
-<table style="margin: 0; text-align: left;">
-    <tr>
-        <td style="width: 150px; height: 150px; vertical-align: middle;">
-            <img src="resources.jpg" width="150" height="150" style="display: block;" />
-        </td>
-        <td>
-            <h2 style="color:#f71;">Other resources</h2>
-            <span style="color:#f71;">I've put together this webpage with useful resources for the course. This includes links to all the slides.<br/>
-            <a href="https://edwarddonner.com/2024/11/13/llm-engineering-resources/">https://edwarddonner.com/2024/11/13/llm-engineering-resources/</a><br/>
-            Please keep this bookmarked, and I'll continue to add more useful links there over time.
-            </span>
-        </td>
-    </tr>
-</table>
+- **9_advanced_ai_trading/**: Advanced AI applications in trading and finance, including fine-tuned models for trading strategy generation and cryptocurrency signal analysis. This section explores cutting-edge applications of AI in the financial domain, demonstrating how to build sophisticated trading systems that can generate strategies, analyze market data, and provide trading signals. I worked with multiple AI models (GPT-4, Claude, Gemini) to create diverse trading strategies and learned how to fine-tune models specifically for financial applications. Projects include building a complete fine-tuning pipeline for trading code generation and creating real-time cryptocurrency analysis systems. This represents advanced applications of AI in a high-stakes domain and demonstrates how to build systems that can make intelligent financial decisions.
