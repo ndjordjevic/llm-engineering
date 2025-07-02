@@ -18,7 +18,7 @@ These tutorials demonstrate:
 
 ### **Core Tutorials**
 
-#### `day1.ipynb` (1.3KB, 50 lines)
+#### `1_intro_colab.ipynb` (1.3KB, 50 lines)
 **Purpose**: Google Colab introduction and environment setup
 
 **Key Features:**
@@ -36,7 +36,7 @@ These tutorials demonstrate:
 
 **Colab Link**: [Day 1 - Colab Introduction](https://colab.research.google.com/drive/1DjcrYDZldAXKJ08x1uYIVCtItoLPk1Wr?usp=sharing)
 
-#### `day2.ipynb` (1.2KB, 50 lines)
+#### `2_huggingface_pipelines.ipynb` (1.2KB, 50 lines)
 **Purpose**: HuggingFace pipelines - high-level API for model inference
 
 **Key Features:**
@@ -68,7 +68,7 @@ translator = pipeline("translation_en_to_fr")
 translated = translator("Hello, how are you?")
 ```
 
-#### `day3.ipynb` (823B, 38 lines)
+#### `3_tokenizers.ipynb` (823B, 38 lines)
 **Purpose**: Tokenizers - understanding text tokenization and processing
 
 **Key Features:**
@@ -102,7 +102,7 @@ decoded = tokenizer.decode(tokens['input_ids'])
 print(decoded)  # "[CLS] hello, world! [SEP]"
 ```
 
-#### `day4.ipynb` (889B, 40 lines)
+#### `4_models.ipynb` (889B, 40 lines)
 **Purpose**: Models - working with transformer models directly
 
 **Key Features:**
@@ -136,7 +136,7 @@ outputs = model(**inputs)
 print(outputs.last_hidden_state.shape)  # torch.Size([1, 4, 768])
 ```
 
-#### `day5.ipynb` (1.1KB, 52 lines)
+#### `5_meeting_minutes_creator.ipynb` (1.1KB, 52 lines)
 **Purpose**: Meeting minutes creator - practical audio processing application
 
 **Key Features:**

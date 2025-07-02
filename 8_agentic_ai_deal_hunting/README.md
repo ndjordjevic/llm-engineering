@@ -19,7 +19,7 @@ This system demonstrates:
 
 ### **Core Tutorials**
 
-#### `day1.ipynb` (12KB, 386 lines)
+#### `1_modal_deployment_intro.ipynb` (12KB, 386 lines)
 **Purpose**: Introduction to Modal cloud deployment and serverless functions
 
 **Key Features:**
@@ -53,7 +53,7 @@ def price(product_description):
 # modal deploy pricer_service
 ```
 
-#### `day2.0.ipynb` (8.4KB, 277 lines)
+#### `2_rag_vectorstore_creation.ipynb` (8.4KB, 277 lines)
 **Purpose**: Building massive RAG database with 400K products
 
 **Key Features:**
@@ -70,7 +70,7 @@ def price(product_description):
 - Process massive datasets
 - Optimize vector operations
 
-#### `day2.1.ipynb` (5.1KB, 183 lines)
+#### `2_1_vector_visualization_2d.ipynb` (5.1KB, 183 lines)
 **Purpose**: 2D visualization of product embeddings
 
 **Key Features:**
@@ -80,7 +80,7 @@ def price(product_description):
 - **Price Distribution**: Visual price analysis
 - **Data Insights**: Exploratory data analysis
 
-#### `day2.2.ipynb` (4.9KB, 175 lines)
+#### `2_2_vector_visualization_3d.ipynb` (4.9KB, 175 lines)
 **Purpose**: 3D visualization of product embeddings
 
 **Key Features:**
@@ -90,7 +90,7 @@ def price(product_description):
 - **Category Mapping**: Visual category relationships
 - **Price Clustering**: 3D price distribution analysis
 
-#### `day2.3.ipynb` (13KB, 504 lines)
+#### `2_3_rag_pipeline_gpt4.ipynb` (13KB, 504 lines)
 **Purpose**: RAG pipeline with GPT-4o-mini integration
 
 **Key Features:**
@@ -107,7 +107,7 @@ def price(product_description):
 - Evaluate RAG performance
 - Engineer effective prompts
 
-#### `day2.4.ipynb` (11KB, 409 lines)
+#### `2_4_ensemble_pricing_agents.ipynb` (11KB, 409 lines)
 **Purpose**: Ensemble pricing with multiple AI models
 
 **Key Features:**
@@ -117,7 +117,7 @@ def price(product_description):
 - **Weighted Averaging**: Intelligent model combination
 - **Confidence Scoring**: Model confidence assessment
 
-#### `day3.ipynb` (6.7KB, 236 lines)
+#### `3_deal_scanner_agent.ipynb` (6.7KB, 236 lines)
 **Purpose**: Agentic AI framework introduction
 
 **Key Features:**
@@ -127,7 +127,7 @@ def price(product_description):
 - **Communication Protocols**: Inter-agent messaging
 - **Memory Management**: Persistent agent memory
 
-#### `day4.ipynb` (4.2KB, 153 lines)
+#### `4_messaging_planning_agents.ipynb` (4.2KB, 153 lines)
 **Purpose**: Advanced agent capabilities
 
 **Key Features:**
@@ -137,7 +137,7 @@ def price(product_description):
 - **Learning Agents**: Adaptive agent behavior
 - **Performance Monitoring**: Agent performance tracking
 
-#### `day5.ipynb` (7.8KB, 210 lines)
+#### `5_gradio_ui_final.ipynb` (7.8KB, 210 lines)
 **Purpose**: Interactive web interface with Gradio
 
 **Key Features:**

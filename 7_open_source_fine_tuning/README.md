@@ -18,7 +18,7 @@ These tutorials demonstrate:
 
 ### **Core Tutorials**
 
-#### `day1.ipynb` (843B, 40 lines)
+#### `1_intro_open_source_fine_tuning.ipynb` (843B, 40 lines)
 **Purpose**: Introduction to open-source fine-tuning
 
 **Key Features:**
@@ -53,7 +53,7 @@ def prepare_dataset(items):
     return Dataset.from_list(dataset)
 ```
 
-#### `day2.ipynb` (843B, 40 lines)
+#### `2_data_preparation_setup.ipynb` (843B, 40 lines)
 **Purpose**: Advanced open-source model training
 
 **Key Features:**
@@ -68,7 +68,7 @@ def prepare_dataset(items):
 - Manage computational resources efficiently
 - Monitor training progress effectively
 
-#### `day3 and 4.ipynb` (850B, 40 lines)
+#### `3_4_model_training_evaluation.ipynb` (850B, 40 lines)
 **Purpose**: Extended training and evaluation
 
 **Key Features:**
@@ -83,7 +83,7 @@ def prepare_dataset(items):
 - Tune hyperparameters for optimal results
 - Analyze model behavior and performance
 
-#### `day5.ipynb` (844B, 40 lines)
+#### `5_results_analysis.ipynb` (844B, 40 lines)
 **Purpose**: Model deployment and production
 
 **Key Features:**

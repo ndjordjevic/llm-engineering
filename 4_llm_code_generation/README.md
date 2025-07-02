@@ -18,7 +18,7 @@ These tutorials demonstrate:
 
 ### **Core Tutorials**
 
-#### `day3.ipynb` (20KB, 616 lines)
+#### `1_frontier_llm_code_generation.ipynb` (20KB, 616 lines)
 **Purpose**: Code generation using frontier models (GPT-4o and Claude-3.5-Sonnet)
 
 **Key Features:**
@@ -58,7 +58,7 @@ def user_prompt_for(python):
 4. **Compilation**: Compile with optimization flags
 5. **Performance Testing**: Compare execution times
 
-#### `day4.ipynb` (29KB, 849 lines)
+#### `2_open_source_llm_code_generation.ipynb` (29KB, 849 lines)
 **Purpose**: Code generation using open-source models via HuggingFace endpoints
 
 **Key Features:**

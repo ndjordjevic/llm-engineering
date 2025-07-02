@@ -18,7 +18,7 @@ These tutorials demonstrate:
 
 ### **Core Tutorials**
 
-#### `day1.ipynb` (13KB, 428 lines)
+#### `1_data_curation_appliances.ipynb` (13KB, 428 lines)
 **Purpose**: Data curation and initial dataset preparation
 
 **Key Features:**
@@ -27,7 +27,7 @@ These tutorials demonstrate:
 - Token management for LLM training
 - Basic data cleaning and preparation
 
-#### `day2.ipynb` (19KB, 622 lines)
+#### `2_data_curation_full_dataset.ipynb` (19KB, 622 lines)
 **Purpose**: Advanced data curation and dataset scaling
 
 **Key Features:**
@@ -36,7 +36,7 @@ These tutorials demonstrate:
 - Advanced filtering strategies
 - Dataset export for training
 
-#### `day3.ipynb` (25KB, 916 lines)
+#### `3_baseline_ml_models.ipynb` (25KB, 916 lines)
 **Purpose**: Traditional machine learning baseline models
 
 **Key Features:**
@@ -45,7 +45,7 @@ These tutorials demonstrate:
 - Model evaluation framework
 - Performance metrics and visualization
 
-#### `day4.ipynb` (11KB, 407 lines)
+#### `4_frontier_llm_evaluation.ipynb` (11KB, 407 lines)
 **Purpose**: Frontier model testing and comparison
 
 **Key Features:**
@@ -54,7 +54,7 @@ These tutorials demonstrate:
 - Prompt engineering optimization
 - Performance analysis and cost management
 
-#### `day5.ipynb` (14KB, 556 lines)
+#### `5_openai_fine_tuning.ipynb` (14KB, 556 lines)
 **Purpose**: LLM fine-tuning with OpenAI
 
 **Key Features:**
@@ -74,7 +74,7 @@ These tutorials demonstrate:
 #### `testing.py` (2.5KB, 75 lines)
 **Purpose**: Model evaluation framework
 
-#### `lite.ipynb` (12KB, 425 lines)
+#### `2_lite_data_curation.ipynb` (12KB, 425 lines)
 **Purpose**: Lightweight version for quick experimentation
 
 ### **Data Files**

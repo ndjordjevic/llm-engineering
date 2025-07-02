@@ -19,7 +19,7 @@ These tutorials demonstrate:
 
 ### **Core Tutorials**
 
-#### `day1.ipynb` (7.4KB, 265 lines)
+#### `1_simple_rag_implementation.ipynb` (7.4KB, 265 lines)
 **Purpose**: Basic RAG implementation with simple keyword-based retrieval
 
 **Key Features:**
@@ -63,7 +63,7 @@ def add_context(message):
 4. **Response Generation**: Generate accurate answers using context
 5. **Chat Interface**: Provide user-friendly web interface
 
-#### `day2.ipynb` (5.0KB, 196 lines)
+#### `2_langchain_document_loading.ipynb` (5.0KB, 196 lines)
 **Purpose**: Advanced document processing with LangChain
 
 **Key Features:**
@@ -99,7 +99,7 @@ text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 chunks = text_splitter.split_documents(documents)
 ```
 
-#### `day3.ipynb` (12KB, 367 lines)
+#### `3_vector_embeddings_chroma.ipynb` (12KB, 367 lines)
 **Purpose**: Vector database implementation with Chroma and embeddings
 
 **Key Features:**
@@ -142,7 +142,7 @@ fig = go.Figure(data=[go.Scatter(
 )])
 ```
 
-#### `day4.ipynb` (15KB, 443 lines)
+#### `4_conversational_rag_chat.ipynb` (15KB, 443 lines)
 **Purpose**: Advanced RAG with conversation memory and retrieval chains
 
 **Key Features:**
@@ -181,7 +181,7 @@ def chat_with_memory(message, history):
     return result["answer"]
 ```
 
-#### `day4.5.ipynb` (13KB, 409 lines)
+#### `5_faiss_vector_store.ipynb` (13KB, 409 lines)
 **Purpose**: Enhanced RAG with advanced features and optimizations
 
 **Key Features:**
@@ -198,7 +198,7 @@ def chat_with_memory(message, history):
 - Improve query processing
 - Enhance overall system capabilities
 
-#### `day5.ipynb` (16KB, 484 lines)
+#### `6_advanced_rag_visualization.ipynb` (16KB, 484 lines)
 **Purpose**: Production-ready RAG system with comprehensive features
 
 **Key Features:**
